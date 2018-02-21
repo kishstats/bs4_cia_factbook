@@ -8,7 +8,7 @@ countries = []
 with open('./files/countries.txt', 'r') as f:
     countries = f.read().splitlines()
 
-for country in countries[:2]:
+for country in countries[]:
     print("processing country: {}".format(country))
     econ_data = process_country_econ_data(country)
 
